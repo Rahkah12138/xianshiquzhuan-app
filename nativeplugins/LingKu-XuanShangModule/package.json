@@ -1,0 +1,42 @@
+{
+    "name": "悬赏任务分发平台插件",
+    "id": "LingKu-XuanShangModule",
+    "version": "2.5",
+    "description": "悬赏任务分发平台，发掘用户潜在价值，为媒体合伙人提供稳定收益，发挥APP流量最大价值。",
+    "_dp_type": "nativeplugin",
+    "_dp_nativeplugin": {
+        "android": {
+            "plugins": [
+                {
+                    "type": "module",
+                    "name": "LingKu-XuanShangModule",
+                    "class": "com.lingku.xuanshang.uniplugin.XuanShangModule"
+                }
+            ],
+            "hooksClass": "com.lingku.xuanshang.uniplugin.XuanShang_AppProxy",
+            "integrateType": "aar",
+            "dependencies": [
+                "androidx.appcompat:appcompat:1.2.0",
+                "androidx.recyclerview:recyclerview:1.1.0",
+                "com.google.code.gson:gson:2.8.6",
+                "androidx.exifinterface:exifinterface:1.3.0",
+                {
+				"id": "com.googlecode.mp4parser:isoparser",
+                "source":"implementation('com.googlecode.mp4parser:isoparser:1.0.6', {\r\nexclude group: 'org.aspectj', module: 'aspectjrt'\r\n})"
+                }
+            ],
+            "minSdkVersion": "21",
+            "useAndroidX": true,
+            "parameters": {
+                "xuanshang_mt_id": {
+                    "des": "媒体id，请在悬赏任务分发媒体后台获取",
+                    "key": "xuanshang_mt_id"
+                },
+                "xuanshang_mt_key": {
+                    "des": "媒体key，请在悬赏任务分发媒体后台获取",
+                    "key": "xuanshang_mt_key"
+                }
+            }
+        }
+    }
+}

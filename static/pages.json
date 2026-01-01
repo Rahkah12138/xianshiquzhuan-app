@@ -1,0 +1,23 @@
+{
+	"pages": [
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "在线客服中心",
+				"navigationBarBackgroundColor": "#FF6A4B",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/webview",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "1",
+		"navigationBarBackgroundColor": "#07c160"
+	}
+}

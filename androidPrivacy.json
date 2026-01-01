@@ -1,0 +1,9 @@
+{
+    "disagreeMode" : {
+        "support" : false,
+        "loadNativePlugins" : false,
+        "visitorEntry" : false,
+        "showAlways" : false
+    },
+    "prompt" : "none"
+}

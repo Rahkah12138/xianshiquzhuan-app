@@ -1,0 +1,273 @@
+{
+    "name" : "闲时趣赚",
+    "appid" : "__UNI__3FEAFFA",
+    "description" : "赚不停悬赏任务平台，致力于给每位用户最好的服务。",
+    "versionName" : "1.0",
+    "versionCode" : 100,
+    "transformPx" : false,
+    "app-plus" : {
+        "compatible" : {
+            "ignoreVersion" : true
+        },
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "VideoPlayer" : {},
+            "Payment" : {},
+            "OAuth" : {},
+            "Camera" : {},
+            "Share" : {}
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INSTALL_SHORTCUT\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.REORDER_TASKS\"/>",
+                    "<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "minSdkVersion" : 23,
+                "targetSdkVersion" : "",
+                "autoSdkPermissions" : true,
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ]
+            },
+            "ios" : {
+                "capabilities" : {
+                    "entitlements" : {
+                        "com.apple.developer.associated-domains" : []
+                    }
+                },
+                "privacyDescription" : {
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "获取实时位置"
+                },
+                "dSYMs" : false
+            },
+            "sdkConfigs" : {
+                "payment" : {
+                    "alipay" : {
+                        "__platform__" : [ "ios", "android" ]
+                    },
+                    "weixin" : {
+                        "__platform__" : [ "android" ],
+                        "appid" : "",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "ad" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "maps" : {},
+                "geolocation" : {
+                    "system" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                },
+                "push" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "common",
+                "android" : {
+                    "hdpi" : "static/splash/480.png",
+                    "xhdpi" : "static/splash/720.png",
+                    "xxhdpi" : "static/splash/1080.png"
+                },
+                "useOriginalMsgbox" : false,
+                "iosStyle" : "common",
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "static/splash/ios_splash.png",
+                        "landscape-896h@3x" : "static/splash/ios_splash.png",
+                        "portrait-896h@2x" : "static/splash/ios_splash.png",
+                        "landscape-896h@2x" : "static/splash/ios_splash.png",
+                        "iphonex" : "static/splash/ios_splash.png",
+                        "iphonexl" : "static/splash/ios_splash.png",
+                        "retina55" : "static/splash/ios_splash.png",
+                        "retina55l" : "static/splash/ios_splash.png",
+                        "retina47" : "static/splash/ios_splash.png",
+                        "retina47l" : "static/splash/ios_splash.png",
+                        "retina40" : "static/splash/ios_splash.png",
+                        "retina40l" : "static/splash/ios_splash.png",
+                        "retina35" : "static/splash/ios_splash.png"
+                    },
+                    "ipad" : {
+                        "landscape7" : "static/splash/ipad_splash.png",
+                        "portrait7" : "static/splash/ipad_splash.png",
+                        "landscape-retina7" : "static/splash/ipad_splash.png",
+                        "portrait-retina7" : "static/splash/ipad_splash.png",
+                        "landscape-1112h@2x" : "static/splash/ipad_splash.png",
+                        "portrait-1112h@2x" : "static/splash/ipad_splash.png",
+                        "landscape-1194h@2x" : "static/splash/ipad_splash.png",
+                        "portrait-1194h@2x" : "static/splash/ipad_splash.png",
+                        "landscape-1366h@2x" : "static/splash/ipad_splash.png",
+                        "portrait-1366h@2x" : "static/splash/ipad_splash.png"
+                    }
+                }
+            }
+        },
+        "nativePlugins" : {
+            "LingKu-XuanShangModule" : {
+                "xuanshang_mt_id" : "1",
+                "xuanshang_mt_key" : "2",
+                "__plugin_info__" : {
+                    "name" : "悬赏任务分发平台插件",
+                    "description" : "悬赏任务分发平台，发掘用户潜在价值，为媒体合伙人提供稳定收益，发挥APP流量最大价值。",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {
+                        "xuanshang_mt_id" : {
+                            "des" : "媒体id，请在悬赏任务分发媒体后台获取",
+                            "key" : "xuanshang_mt_id",
+                            "value" : ""
+                        },
+                        "xuanshang_mt_key" : {
+                            "des" : "媒体key，请在悬赏任务分发媒体后台获取",
+                            "key" : "xuanshang_mt_key",
+                            "value" : ""
+                        }
+                    }
+                }
+            },
+            "moku-sdk" : {
+                "__plugin_info__" : {
+                    "name" : "moku-sdk",
+                    "description" : "developed for moku-planet-api-native-sdk-1.3.1",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            },
+            "Acc-NativeTool" : {
+                "__plugin_info__" : {
+                    "name" : "acc_nativeTool",
+                    "description" : "安卓原生工具集",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            }
+        },
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : false,
+            "minified" : false,
+            "postcss" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false,
+        "version" : "1"
+    },
+    "h5" : {
+        "title" : "赚不停 - 任务悬赏平台",
+        "domain" : "",
+        "router" : {
+            "base" : "/h5/",
+            "mode" : "history"
+        }
+    },
+    "_spaceID" : "",
+    "_qq_spaceID" : "",
+    "vueVersion" : "2",
+    "locale" : "zh-Hans"
+}

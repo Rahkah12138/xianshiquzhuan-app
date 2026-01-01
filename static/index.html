@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>在线客服中心</title>
+		<link rel="stylesheet" href="common/vant.min.css" />
+		<script src="common/vue.js"></script>
+		<script src="common/vant.min.js"></script>
+		<script src="common/axios.min.js"></script>
+		<script src="common/Session.js"></script>
+		<script src="common/Tools.js"></script>
+		<script src="common/Validate.js"></script>
+		<script src="common/Page.js"></script>
+		<script src="common/Http.js"></script>
+		<meta name="author" content="" />
+		<link rel="stylesheet" href="common/diygw-ui/index.css" />
+	</head>
+	<body>
+		<div id="app">
+			<div class="container">
+				<div class="flex diygw-col-24 justify-center">
+					<div class="diygw-avatar xl bg-none">
+						<img mode="aspectFit" class="diygw-avatar-img" src="https://app.xqkz.top/image/logo.png" />
+					</div>
+				</div>
+				<div class="diygw-title flex diygw-col-24">
+					<div class="title text-center flex1 font-bold">在线客服</div>
+				</div>
+				<div class="diygw-title flex diygw-col-24">
+					<div class="title font-bold">服务时间如下:</div>
+				</div>
+				<div class="diygw-col-24 text-clz">
+					<p>人工客服：上午9:00-12:00 下午13:30-17:30 晚上19:00-23:00</p>
+					<p>提现审核：上午9点至晚上23点（非工作时间大额提现24小时内到账，请勿催促，节假日延迟）</p>
+					<p>举报维权：24小时内处理完成，请耐心等待我们处理回复</p>
+					<p>发布审核：上午9点至晚上23点，审核时间30分钟内左右</p>
+					<p>
+						<span style="background-color: #ffffff; color: #333333; font-family: Arial, sans-serif; text-align: justify">★</span><span style="background-color: #ffffff; color: #333333; font-family: Arial, sans-serif; text-align: justify">★</span><span style="font-family: inherit">请务必点击《帮助中心》查阅解答，可解决您90%的问题或人工客服在线时间协助您解决</span><span style="background-color: #ffffff; color: #333333; font-family: Arial, sans-serif; text-align: justify">★</span
+						><span style="background-color: #ffffff; color: #333333; font-family: Arial, sans-serif; text-align: justify">★</span>
+					</p>
+				</div>
+				<div class="flex diygw-col-24">
+					<div class="diygw-pzx" style="border-bottom: 1px solid rgba(238, 238, 238, 0)"></div>
+				</div>
+				<div class="flex diygw-col-24">
+					<div class="diygw-pzx" style="border-bottom: 1px solid rgba(238, 238, 238, 0)"></div>
+				</div>
+				<div class="flex diygw-col-24">
+					<div class="diygw-pzx" style="border-bottom: 1px solid rgba(238, 238, 238, 0)"></div>
+				</div>
+				<div class="diygw-title flex diygw-col-24">
+					<div class="title text-center flex1 font-bold"><span class="diy-icon-servicefill"></span>官方微信群</div>
+				</div>
+				<div class="flex diygw-col-24 justify-center">
+					<!-- <div class="diygw-tag margin-xs diygw-capsule diygw-shadow" @click="navigateTo" data-type="href" data-url="#">
+						<div class="diygw-tag bg-green xs radius-md">
+							<span class="diygw-icon diy-icon-wechat"></span>
+						</div> -->
+						<!-- <span class="diygw-tag diygw-line-green radius-md xs">微信号12</span> -->
+						
+						<img mode="aspectFit" class="dx" src="https://yunbaotoutiao.cn/uploads/20230821/075c5c92642b39e7011dbc69165a4a70.jpg" />
+					</div>
+				</div>
+				<div class="diygw-title flex diygw-col-24 title2-clz">
+					<div class="title text-center flex1 font-bold"><span class="diy-icon-QQ"></span> 加官方QQ群（联系客服）</div>
+				</div>
+				<div class="flex diygw-col-24 justify-center">
+					<!-- <div class="diygw-tag margin-xs diygw-capsule diygw-shadow" @click="navigateTo" data-type="href" data-url="#">
+						<div class="diygw-tag bg-green xs radius-md">
+							<span class="diygw-icon diy-icon-QQ"></span>
+						</div> -->
+					
+							<img mode="aspectFit" class="dx" src="https://yunbaotoutiao.cn/uploads/20230821/9155ba0f057b1cf82d0a1973d317d37b.jpg" />
+						</div>
+					</div>
+				<div class="version text-grey flex-direction-column flex diygw-col-24 justify-center align-center">
+				<!-- 	<div>云宝悬赏提供技术支持</div> -->
+					<div></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</body>
+	<script type="module">
+		const app = Vue.createApp({
+			data() {
+				return {};
+			},
+			created() {
+				this.init();
+			},
+			methods: {
+				async init() {}
+			}
+		});
+		app.use(vant);
+		app.config.globalProperties.$tools = new Tools();
+		app.config.globalProperties.$http = httpService;
+		app.config.globalProperties.$session = Session;
+		app.mixin({
+			methods: {
+				Validate,
+				setData,
+				navigateTo,
+				showModal,
+				showToast,
+				uploadImage
+			}
+		});
+		app.mount('#app');
+	</script>
+	<style>
+		.text-clz {
+			box-shadow: 0px 1px 3px rgba(31, 31, 31, 0.16);
+			overflow: hidden;
+		}
+		.title2-clz {
+			font-size: 7px !important;
+		}
+		.container {
+			padding-left: 0px;
+			padding-right: 0px;
+
+			font-size: 12px;
+		}
+		.dx {
+		    width: 180px;
+		    height: 300px;
+		    margin: 11px 16px 10 10;
+	</style>
+</html>
