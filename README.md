@@ -1,4 +1,4 @@
-![screen1](https://github.com/user-attachments/assets/d55314f9-3de3-406d-a946-6ef3a4b66f3d)![retouch_2025122018470160](https://github.com/user-attachments/assets/bb6e8d9b-f529-4235-84a3-e30ca245336c)# xianshiquzhuan-app
+# xianshiquzhuan-app
 闲时趣赚 - 企业级悬赏任务平台系统源码 | FastAdmin + ThinkPHP + uni-app 任务众包系统 uni-app 源码
 # 闲时趣赚 (XianShiQuZhuan) - Client Side Source Code
 
@@ -33,9 +33,7 @@
 * **财务模块**：钱包界面/充值提现/收支明细
 * **营销推广**：邀请海报生成/团队管理/分销数据展示
 
-![screen1](https://github.com/user-attachments/assets/b0e5db32-732d-497f-af5d-fbdcf6db7efd)
-![retouch_2025122018470109](https://github.com/user-attachments/assets/dc5a50af-3bce-4eb3-ae7e-c74e2525b7a8)
-![retouch_2025122018470160](https://github.com/user-attachments/assets/740882b4-570c-4c90-8864-4bf472dbb418)
+<img width="3172" height="2458" alt="图像-1767256210313" src="https://github.com/user-attachments/assets/93e5d460-bd78-4d50-b114-d0381ff11de3" />
 
 ---
 
